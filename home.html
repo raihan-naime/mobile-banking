@@ -31,20 +31,19 @@
 
                 <!-- features section start-->
                 <div class="grid grid-cols-2 gap-3">
-                    <button class="btn btn-lg">Add Money</button>
-                    <button class="btn btn-lg">Cash Out</button>
-                    <button class="btn btn-lg">Payment</button>
-                    <button class="btn btn-lg">Discount</button>
-                    <button class="btn btn-lg">Token</button>
-                    <button class="btn btn-lg">Mobile Recharge</button>
+                    <button id="show-add-money-section" class="btn btn-lg">Add Money</button>
+                    <button id="show-cash-out-section" class="btn btn-lg">Cash Out</button>
+                    <button id="show-payment-section" class="btn btn-lg">Payment</button>
+                    <button id="show-discount-section" class="btn btn-lg">Discount</button>
+                    <button id="show-transaction-section" class="btn btn-lg">Transaction</button>
+                    <button id="show-recharge-section" class="btn btn-lg">Mobile Recharge</button>
                 </div>
 
                 <!-- features section end-->
                 <div class="divider"></div>
 
                 <!-- add money form start -->
-
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                <div id="add-money-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                     <div class="card-body">
                         <fieldset class="fieldset">
 
@@ -59,12 +58,11 @@
                         </fieldset>
                     </div>
                 </div>
-
                 <!-- Add Money form end -->
 
-                <!-- Cash Out section start -->
 
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                <!-- Cash Out section start -->
+                <div id="cash-out-section" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                     <div class="card-body">
                         <fieldset class="fieldset">
 
@@ -79,15 +77,39 @@
                         </fieldset>
                     </div>
                 </div>
-
                 <!-- Cash Out section end -->
 
+                <!-- payment section start -->
+                 <div id="payment-section" class="hidden bg-green-600">
+                    <h2>Payment Method</h2>
+                 </div>
+                <!-- payment section end -->
+
+                <!-- discount section start -->
+                 <div id="discount-section" class="hidden bg-orange-500">
+                    <h2>Discount!</h2>
+                 </div>
+                <!-- discount section end -->
+
+                <!-- Transaction section start -->
+                 <div id="transaction-section" class="hidden bg-violet-500">
+                    <h1>Transaction History</h1>
+                 </div>
+                <!-- Transaction section end -->
+
+                <!-- mobile recharge section start -->
+                 <div id="recharge-section" class="hidden bg-yellow-300">
+                    <h2>Mobile Recharge</h2>
+                 </div>
+                <!-- mobile recharge section end -->
             </div>
         </div>
     </main>
 
     <script src="js/addmoney.js"></script>
     <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/cashout.js"></script>
 </body>
 
 </html>

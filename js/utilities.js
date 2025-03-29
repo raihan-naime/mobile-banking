@@ -11,3 +11,16 @@ function getTextValue (id){
     const inputTextNumber = parseFloat(inputText);
     return inputTextNumber;
 }
+
+// to get specific form to use
+function getSpecificForm (id){
+    document.getElementById('add-money-section').classList.add('hidden');
+    document.getElementById('cash-out-section').classList.add('hidden');
+    document.getElementById('payment-section').classList.add('hidden');
+    document.getElementById('discount-section').classList.add('hidden');
+    document.getElementById('transaction-section').classList.add('hidden');
+    document.getElementById('recharge-section').classList.add('hidden');
+
+    // get specific form by clicking the button
+    document.getElementById(id).classList.remove('hidden')
+}
