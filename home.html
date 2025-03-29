@@ -80,27 +80,41 @@
                 <!-- Cash Out section end -->
 
                 <!-- payment section start -->
-                 <div id="payment-section" class="hidden bg-green-600">
-                    <h2>Payment Method</h2>
-                 </div>
+
+                <div id="payment-section" class="card bg-green-600 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+
+                            <label class="fieldset-label">Cash Out</label>
+                            <input id="amount-payment" type="text" class="input text-black" placeholder="Amount" />
+
+                            <label class="fieldset-label">Pin Number</label>
+                            <input id="pin-payment" type="password" class="input text-black"
+                                placeholder="Pin Number" />
+
+                            <button id="btn-payment" class="btn btn-neutral mt-4">Cash Out</button>
+                        </fieldset>
+                    </div>
+                </div>
+
                 <!-- payment section end -->
 
                 <!-- discount section start -->
-                 <div id="discount-section" class="hidden bg-orange-500">
+                <div id="discount-section" class="hidden bg-orange-500">
                     <h2>Discount!</h2>
-                 </div>
+                </div>
                 <!-- discount section end -->
 
                 <!-- Transaction section start -->
-                 <div id="transaction-section" class="hidden bg-violet-500">
+                <div id="transaction-section" class="hidden bg-violet-500">
                     <h1>Transaction History</h1>
-                 </div>
+                </div>
                 <!-- Transaction section end -->
 
                 <!-- mobile recharge section start -->
-                 <div id="recharge-section" class="hidden bg-yellow-300">
+                <div id="recharge-section" class="hidden bg-yellow-300">
                     <h2>Mobile Recharge</h2>
-                 </div>
+                </div>
                 <!-- mobile recharge section end -->
             </div>
         </div>
@@ -110,6 +124,7 @@
     <script src="js/utilities.js"></script>
     <script src="js/features.js"></script>
     <script src="js/cashout.js"></script>
+    <script src="js/payment.js"></script>
 </body>
 
 </html>
