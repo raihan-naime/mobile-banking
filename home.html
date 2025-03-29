@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+
+    <!-- daisy ui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <h1>Welcome to home page</h1>
+    <main class="flex justify-center">
+        <div class="mockup-phone bg-cyan-400">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid place-content-center">
+
+                <!-- Account balance section -->
+
+                <div class="stats shadow bg-slate-500 text-center">
+                    <div class="stat">
+                        <div class="stat-title text-black text-3xl font-bold text-gray-100">Current Balance</div>
+                        <div id="current-balance" class="stat-value">1000</div>
+
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- features section start-->
+                <div class="grid grid-cols-2 gap-3">
+                    <button class="btn btn-lg">Add Money</button>
+                    <button class="btn btn-lg">Cash Out</button>
+                    <button class="btn btn-lg">Payment</button>
+                    <button class="btn btn-lg">Discount</button>
+                    <button class="btn btn-lg">Token</button>
+                    <button class="btn btn-lg">Mobile Recharge</button>
+                </div>
+
+                <!-- features section end-->
+                <div class="divider"></div>
+
+                <!-- add money form start -->
+
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+
+                            <label class="fieldset-label">Add Money</label>
+                            <input id="amount-add-money" type="text" class="input text-black" placeholder="Amount" />
+
+                            <label class="fieldset-label">Pin Number</label>
+                            <input id="pin-add-money" type="password" class="input text-black"
+                                placeholder="Pin Number" />
+
+                            <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Add Money form end -->
+
+                <!-- Cash Out section start -->
+
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+
+                            <label class="fieldset-label">Cash Out</label>
+                            <input id="amount-cash-out" type="text" class="input text-black" placeholder="Amount" />
+
+                            <label class="fieldset-label">Pin Number</label>
+                            <input id="pin-cash-out" type="password" class="input text-black"
+                                placeholder="Pin Number" />
+
+                            <button id="btn-cash-out" class="btn btn-neutral mt-4">Cash Out</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <!-- Cash Out section end -->
+
+            </div>
+        </div>
+    </main>
+
+    <script src="js/addmoney.js"></script>
+    <script src="js/utilities.js"></script>
 </body>
+
 </html>
