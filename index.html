@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Banking</title>
+
+    <!-- daisy ui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <main>
-        <h1 class="">Mobile Banking</h1>
+    <main class="flex justify-center">
+        <div class="mockup-phone bg-cyan-400">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid place-content-center">
+               
+                <!-- Login form start -->
+
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                      <fieldset class="fieldset">
+
+                        <label class="fieldset-label">Mobile Number</label>
+                        <input id="mobile-number" type="text" class="input text-black" placeholder="Mobile Number" />
+
+                        <label class="fieldset-label">Pin Number</label>
+                        <input id="pin-Number" type="password" class="input text-black" placeholder="Pin Number" />
+                        
+                        <button id="btn-login" class="btn btn-neutral mt-4">Login</button>
+                      </fieldset>
+                    </div>
+                  </div>
+
+                <!-- Login form end -->
+
+            </div>
+          </div>
     </main>
+
+    <!-- js files -->
+     <script src="js/utilities.js"></script>
+     <script src="js/login.js"></script>
 </body>
 </html>
